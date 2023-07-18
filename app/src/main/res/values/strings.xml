@@ -3,4 +3,9 @@
     <string name="enter_user_name">enter user name</string>
     <string name="enter_password">enter password</string>
     <string name="login">login</string>
+    <string name="sort_by_name">Sort By Name</string>
+    <string name="sort_by_age">Sort By Age</string>
+    <string name="sort_by_city">Sort By City</string>
+    <string name="_dot">--</string>
+    <string name="please_wait_data_is_loading">Please wait !! Data is loading!</string>
 </resources>
