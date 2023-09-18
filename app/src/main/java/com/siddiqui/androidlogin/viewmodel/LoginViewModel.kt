@@ -7,9 +7,12 @@ import com.siddiqui.androidlogin.model.UserLogin
 class LoginViewModel:ViewModel(){
     val loginResultLiveData:MutableLiveData<Boolean> = MutableLiveData()
 
-    fun login(userName:String, userPassword:String){
-        val isLoginSuccessful = userName.isNotEmpty() && userPassword.isNotEmpty()
+    fun login(userLogin: UserLogin){
+        val isLoginSuccessful = userLogin.userName.isNotEmpty() && userLogin.userPassword.isNotEmpty()
         loginResultLiveData.postValue(isLoginSuccessful)
+    }
+    fun isError(userLogin: UserLogin): Boolean {
+        return userLogin.userName.isEmpty() && userLogin.userPassword.isEmpty()
     }
 
 }

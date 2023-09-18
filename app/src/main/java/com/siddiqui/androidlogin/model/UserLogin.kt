@@ -1,4 +1,4 @@
 package com.siddiqui.androidlogin.model
 
-class UserLogin(userName:String, userPassword:String){}
+data class UserLogin(var userName:String,var userPassword:String)
 
